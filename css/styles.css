@@ -62,6 +62,21 @@ img {
   overflow: hidden;
 }
 
+.visually-hidden-check {
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -504,6 +519,8 @@ img {
 }
 
 .address-block {
+  display: flex;
+  flex-direction: column;
   margin-right: 70px;
 }
 
@@ -658,7 +675,6 @@ img {
   transition-timing-function: var(--timing-function);
 }
 
-
 .close-button:hover,
 .close-button:focus {
   fill: var(--accent-color);
@@ -749,6 +765,7 @@ img {
 
 .wrap {
   position: relative;
+  margin-bottom: 10px;
 
   display: flex;
   flex-direction: column;
@@ -766,7 +783,6 @@ img {
 
 .order-input,
 .order-text {
-  margin-bottom: 10px;
   margin-top: 4px;
 
   width: 100%;
@@ -817,7 +833,7 @@ img {
 
 .form-icon {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 5%;
   transform: translate(-50%, -50%);
 
@@ -887,11 +903,12 @@ img {
 
 .sub-form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 .sub-title {
-  margin-bottom: 20px;
+  width: 358px;
 
   font-weight: 700;
   font-size: 14px;
@@ -903,11 +920,15 @@ img {
 
 .sub-input {
   padding-left: 16px;
-  margin-right: 12px;
+  margin-top: 20px;
 
   width: 358px;
   height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;

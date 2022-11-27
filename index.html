@@ -432,10 +432,17 @@
         </div>
 
         <div class="sub-block">
-          <p class="sub-title">Підпишіться на розсилку</p>
           <form class="sub-form">
-            <label>
-              <input type="email" placeholder="E-mail" name="mail" class="sub-input" required />
+            <label class="sub-title" for="subscription">
+              Підпишіться на розсилку
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="mail"
+                class="sub-input"
+                required
+                id="subscription"
+              />
             </label>
             <button type="submit" class="sub-button btn">
               Підписатися
@@ -489,7 +496,7 @@
             type="checkbox"
             name="agreement"
             value="agreement"
-            class="order-agreement visually-hidden"
+            class="order-agreement visually-hidden-check"
             id="policy"
             required
           />
